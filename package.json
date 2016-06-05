@@ -1,0 +1,16 @@
+{
+  "name": "hacker-list",
+  "version": "1.0.0",
+  "description": "gathers top 10 hacker news posts each week and emails them out",
+  "main": "server.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "moment": "^2.13.0",
+    "node-sort": "^0.2.0",
+    "nodemailer": "^2.4.2",
+    "request": "^2.72.0"
+  }
+}
