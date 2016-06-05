@@ -46,6 +46,7 @@ function getLast(){
     var clearIt = function(){
       clearInterval(a);
     }
+    console.log('loading posts...');
     a = setInterval(function(){
       request('https://hacker-news.firebaseio.com/v0/item/'+id+'.json?print=pretty', function(err, res, body){
         if(err){
@@ -60,7 +61,6 @@ function getLast(){
           }
           //console.log('ENDED: ', stories);
         } else if(body.type === 'story' && body.score > 1){
-          console.log(body.time - lastWeek);
           stories.push(body);
         }
         id--;

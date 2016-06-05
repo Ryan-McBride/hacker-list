@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "gathers top 10 hacker news posts each week and emails them out",
   "main": "server.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node server.js" 
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
